@@ -3,7 +3,7 @@ cd ~/slurm/slurmer/
 
 squeue --noconvert -o "%.8j %.8u %.2t %.10M %R %.6D %A %C %D  %m" > .file1
 
-R --vanilla --slave --no-save < ~/slurm/slurmer/bla.r 
+/usr/bin/R --vanilla --slave --no-save < ~/slurm/slurmer/bla.r 
 
 
 printf "\n\n"

@@ -1,6 +1,6 @@
 setwd("~/slurm/slurmer")
 suppressPackageStartupMessages(require(dplyr))
-suppressPackageStartupMessages(require(crayon))
+
 
 my_bla <- read.table(".file1")
 rownames(my_bla) <- NULL
