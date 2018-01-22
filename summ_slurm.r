@@ -30,5 +30,5 @@ my_blub
 
 
 my_jobs <- filter(my_bla, my_bla$USER == "jaf81qa")
-cat(red(" ","\n", "My Jobs\n" , "\n"))
+cat(" ","\n", "My Jobs\n" , "\n")
 my_jobs
