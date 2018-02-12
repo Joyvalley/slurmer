@@ -1,6 +1,8 @@
 setwd("~/slurm/slurmer")
 suppressPackageStartupMessages(require(dplyr))
 
+i_am <- Sys.info()[6]
+
 
 my_bla <- read.table(".file1")
 rownames(my_bla) <- NULL
@@ -29,6 +31,6 @@ my_blub$MEM <- trunc((my_blub$MEM)*0.001)
 my_blub
 
 
-my_jobs <- filter(my_bla, my_bla$USER == "jaf81qa")
+my_jobs <- filter(my_bla, my_bla$USER == i_am)
 cat(" ","\n", "My Jobs\n" , "\n")
 my_jobs
